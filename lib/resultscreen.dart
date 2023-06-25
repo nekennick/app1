@@ -15,11 +15,27 @@ class ResultScreen extends StatelessWidget {
         elevation: 0.0,
         centerTitle: true,
       ),
-      body: Center(
-        child: Text(
-          result,
-          style: const TextStyle(fontSize: 24.0),
-        ),
+      body: Column(
+        verticalDirection: VerticalDirection.down,
+        mainAxisAlignment: MainAxisAlignment.start,
+        children: [
+          const Text('data'),
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: Card(
+              color: Colors.pink,
+              shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(10)),
+              child: Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: Text(
+                  result,
+                  style: const TextStyle(),
+                ),
+              ),
+            ),
+          ),
+        ],
       ),
     );
   }

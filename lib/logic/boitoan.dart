@@ -41,7 +41,7 @@ class _BoiToanState extends State<BoiToan> {
             verticalDirection: VerticalDirection.down,
             mainAxisAlignment: MainAxisAlignment.start,
             children: [
-              TextField(
+              TextFormField(
                 onChanged: (value) {
                   setState(() {
                     name1 = value;
@@ -56,7 +56,7 @@ class _BoiToanState extends State<BoiToan> {
               const SizedBox(
                 height: 10,
               ),
-              TextField(
+              TextFormField(
                 onChanged: (value) {
                   setState(() {
                     name2 = value;
@@ -68,121 +68,131 @@ class _BoiToanState extends State<BoiToan> {
                   hintText: 'Tên người ấy',
                 ),
               ),
-              ElevatedButton(
-                onPressed: () {
-                  String result = getResultName(name1, name2);
-                  _showResultScreen(
-                      result); // Hiển thị kết quả trên màn hình khác
-                },
-                child: const Text('Tính kết quả'),
-              ),
-              Card(
-                color: Colors.pink,
-                shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(10)),
-                child: Padding(
-                  padding: const EdgeInsets.all(8.0),
-                  child: Padding(
-                    padding: const EdgeInsets.all(8.0),
-                    child: Row(
-                      children: [
-                        const Expanded(
-                          child: Column(
-                              mainAxisSize: MainAxisSize.min,
-                              crossAxisAlignment: CrossAxisAlignment.start,
-                              children: [
-                                Text(
-                                  'Bói Tình Yêu',
-                                  style: TextStyle(fontSize: 28),
-                                ),
-                                Text(
-                                  'Tìm hiểu sự tương hợp trong tình yêu đôi lứa!',
-                                  style: TextStyle(),
-                                )
-                              ]),
-                        ),
-                        Container(
-                          height: 100,
-                          width: 100,
-                          color: Colors.white,
-                        )
-                      ],
-                    ),
-                  ),
-                ),
-              ),
-              Card(
-                color: Colors.pink,
-                shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(10)),
-                child: Padding(
-                  padding: const EdgeInsets.all(8.0),
-                  child: Padding(
-                    padding: const EdgeInsets.all(8.0),
-                    child: Row(
-                      children: [
-                        const Expanded(
-                          child: Column(
-                              mainAxisSize: MainAxisSize.min,
-                              crossAxisAlignment: CrossAxisAlignment.start,
-                              children: [
-                                Text(
-                                  'Bói Tình Yêu',
-                                  style: TextStyle(fontSize: 28),
-                                ),
-                                Text(
-                                  'Tìm hiểu sự tương hợp trong tình yêu đôi lứa!',
-                                  style: TextStyle(),
-                                )
-                              ]),
-                        ),
-                        Container(
-                          height: 100,
-                          width: 100,
-                          color: Colors.white,
-                        )
-                      ],
-                    ),
-                  ),
-                ),
-              ),
-              Card(
-                color: Colors.pink,
-                shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(10)),
-                child: Padding(
-                  padding: const EdgeInsets.all(8.0),
-                  child: Padding(
-                    padding: const EdgeInsets.all(8.0),
-                    child: Row(
-                      children: [
-                        const Expanded(
-                          child: Column(
-                              mainAxisSize: MainAxisSize.min,
-                              crossAxisAlignment: CrossAxisAlignment.start,
-                              children: [
-                                Text(
-                                  'Bói Tình Yêu',
-                                  style: TextStyle(fontSize: 28),
-                                ),
-                                Text(
-                                  'Tìm hiểu sự tương hợp trong tình yêu đôi lứa!',
-                                  style: TextStyle(),
-                                )
-                              ]),
-                        ),
-                        Container(
-                          height: 100,
-                          width: 100,
-                          color: Colors.white,
-                        )
-                      ],
-                    ),
-                  ),
-                ),
-              ),
               const SizedBox(
                 height: 10,
+              ),
+              GestureDetector(
+                onTap: () {
+                  String result = getResultName(name1, name2);
+                  _showResultScreen(result);
+                },
+                child: Card(
+                  color: Colors.pink,
+                  shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(10)),
+                  child: Padding(
+                    padding: const EdgeInsets.all(8.0),
+                    child: Padding(
+                      padding: const EdgeInsets.all(8.0),
+                      child: Row(
+                        children: [
+                          const Expanded(
+                            child: Column(
+                                mainAxisSize: MainAxisSize.min,
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: [
+                                  Text(
+                                    'Bói Tình Yêu',
+                                    style: TextStyle(fontSize: 28),
+                                  ),
+                                  Text(
+                                    'Tìm hiểu sự tương hợp trong tình yêu đôi lứa!',
+                                    style: TextStyle(),
+                                  )
+                                ]),
+                          ),
+                          Container(
+                            height: 100,
+                            width: 100,
+                            color: Colors.white,
+                          )
+                        ],
+                      ),
+                    ),
+                  ),
+                ),
+              ),
+              GestureDetector(
+                onTap: () {
+                  String result = getResultName(name1, name2);
+                  _showResultScreen(result);
+                },
+                child: Card(
+                  color: Colors.pink,
+                  shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(10)),
+                  child: Padding(
+                    padding: const EdgeInsets.all(8.0),
+                    child: Padding(
+                      padding: const EdgeInsets.all(8.0),
+                      child: Row(
+                        children: [
+                          const Expanded(
+                            child: Column(
+                                mainAxisSize: MainAxisSize.min,
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: [
+                                  Text(
+                                    'Bói Sự Nghiệp',
+                                    style: TextStyle(fontSize: 28),
+                                  ),
+                                  Text(
+                                    'Tìm hiểu sự tương hợp trong tình yêu đôi lứa!',
+                                    style: TextStyle(),
+                                  )
+                                ]),
+                          ),
+                          Container(
+                            height: 100,
+                            width: 100,
+                            color: Colors.white,
+                          )
+                        ],
+                      ),
+                    ),
+                  ),
+                ),
+              ),
+              GestureDetector(
+                onTap: () {
+                  String result = getResultName(name1, name2);
+                  _showResultScreen(result);
+                },
+                child: Card(
+                  color: Colors.pink,
+                  shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(10)),
+                  child: Padding(
+                    padding: const EdgeInsets.all(8.0),
+                    child: Padding(
+                      padding: const EdgeInsets.all(8.0),
+                      child: Row(
+                        children: [
+                          const Expanded(
+                            child: Column(
+                                mainAxisSize: MainAxisSize.min,
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: [
+                                  Text(
+                                    'Bói Hôn Nhân',
+                                    style: TextStyle(fontSize: 28),
+                                  ),
+                                  Text(
+                                    'Tìm hiểu sự tương hợp trong tình yêu đôi lứa!',
+                                    style: TextStyle(),
+                                  )
+                                ]),
+                          ),
+                          Container(
+                            height: 100,
+                            width: 100,
+                            color: Colors.white,
+                          )
+                        ],
+                      ),
+                    ),
+                  ),
+                ),
               ),
               Card(
                 color: Colors.pink,

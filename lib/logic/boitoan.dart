@@ -80,13 +80,13 @@ class _BoiToanState extends State<BoiToan> {
                   color: Colors.pink,
                   shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(10)),
-                  child: Padding(
-                    padding: const EdgeInsets.all(8.0),
+                  child: const Padding(
+                    padding: EdgeInsets.all(8.0),
                     child: Padding(
-                      padding: const EdgeInsets.all(8.0),
+                      padding: EdgeInsets.all(8.0),
                       child: Row(
                         children: [
-                          const Expanded(
+                          Expanded(
                             child: Column(
                                 mainAxisSize: MainAxisSize.min,
                                 crossAxisAlignment: CrossAxisAlignment.start,
@@ -98,13 +98,11 @@ class _BoiToanState extends State<BoiToan> {
                                   Text(
                                     'Tìm hiểu sự tương hợp trong tình yêu đôi lứa!',
                                     style: TextStyle(),
-                                  )
+                                  ),
                                 ]),
                           ),
-                          Container(
-                            height: 100,
-                            width: 100,
-                            color: Colors.white,
+                          Row(
+                            children: <Widget>[Icon(Icons.accessibility)],
                           )
                         ],
                       ),

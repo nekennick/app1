@@ -1,4 +1,4 @@
-import 'package:app1/logic/boitheoten.dart';
+import 'package:app1/logic/boitoan.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -17,7 +17,7 @@ class MyApp extends StatelessWidget {
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
       debugShowCheckedModeBanner: false,
-      home: Boitoan(),
+      home: const BoiToan(),
     );
   }
 }

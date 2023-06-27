@@ -1,5 +1,5 @@
 int getSingleDigit(int number) {
-  while (number > 9) {
+  while (number >= 10) {
     int sum = 0;
     while (number > 0) {
       sum += number % 10;

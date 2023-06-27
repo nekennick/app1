@@ -1,4 +1,6 @@
 import 'package:app1/logic/resultname.dart';
+import 'package:app1/logic/singledigit.dart';
+import 'package:app1/logic/sumofnumber.dart';
 import 'package:app1/widget.dart';
 import 'package:flutter/material.dart';
 
@@ -13,14 +15,32 @@ class BoiToan extends StatefulWidget {
 }
 
 class _BoiToanState extends State<BoiToan> {
-  String name1 = '';
-  String name2 = '';
+  final TextEditingController name1Controller = TextEditingController();
+  final TextEditingController name2Controller = TextEditingController();
+  String result = '';
 
-  void _showResultScreen(String result) {
+  void _showResultScreen() {
+    String name1 = name1Controller.text;
+    String name2 = name2Controller.text;
+
+    int sum1 = getSumOfNumber(name1);
+    int sum2 = getSumOfNumber(name2);
+
+    int totalSum = sum1 + sum2;
+    int singleDigitSum = getSingleDigit(totalSum);
+
+    result = getResultName(singleDigitSum);
+
     Navigator.push(
       context,
       MaterialPageRoute(
-        builder: (context) => ResultScreen(result: result),
+        builder: (context) => ResultScreen(
+          name1: name1,
+          name2: name2,
+          sum1: sum1,
+          sum2: sum2,
+          result: result,
+        ),
       ),
     );
   }
@@ -42,12 +62,8 @@ class _BoiToanState extends State<BoiToan> {
             verticalDirection: VerticalDirection.down,
             mainAxisAlignment: MainAxisAlignment.start,
             children: [
-              TextFormField(
-                onChanged: (value) {
-                  setState(() {
-                    name1 = value;
-                  });
-                },
+              TextField(
+                controller: name1Controller,
                 decoration: InputDecoration(
                   border: OutlineInputBorder(
                       borderRadius: BorderRadius.circular(10.0)),
@@ -57,12 +73,8 @@ class _BoiToanState extends State<BoiToan> {
               const SizedBox(
                 height: 10,
               ),
-              TextFormField(
-                onChanged: (value) {
-                  setState(() {
-                    name2 = value;
-                  });
-                },
+              TextField(
+                controller: name2Controller,
                 decoration: InputDecoration(
                   border: OutlineInputBorder(
                       borderRadius: BorderRadius.circular(10.0)),
@@ -74,8 +86,7 @@ class _BoiToanState extends State<BoiToan> {
               ),
               GestureDetector(
                 onTap: () {
-                  String result = getResultName(name1, name2);
-                  _showResultScreen(result);
+                  _showResultScreen();
                 },
                 child: Card(
                   color: Colors.pink,
@@ -113,8 +124,7 @@ class _BoiToanState extends State<BoiToan> {
               ),
               GestureDetector(
                 onTap: () {
-                  String result = getResultName(name1, name2);
-                  _showResultScreen(result);
+                  _showResultScreen();
                 },
                 child: Card(
                   color: Colors.pink,
@@ -154,8 +164,7 @@ class _BoiToanState extends State<BoiToan> {
               ),
               GestureDetector(
                 onTap: () {
-                  String result = getResultName(name1, name2);
-                  _showResultScreen(result);
+                  _showResultScreen();
                 },
                 child: Card(
                   color: Colors.pink,

@@ -23,6 +23,25 @@ class ResultScreen extends StatefulWidget {
 }
 
 class _ResultScreenState extends State<ResultScreen> {
+  bool isLoading = true;
+
+  @override
+  void initState() {
+    super.initState();
+    // Gọi phương thức _showResult() sau khi delay 2 giây
+    _showResult();
+  }
+
+  void _showResult() {
+    // Delay 2 giây
+    Future.delayed(const Duration(seconds: 2), () {
+      // Cập nhật trạng thái isLoading và hiển thị widget.result
+      setState(() {
+        isLoading = false;
+      });
+    });
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -32,32 +51,39 @@ class _ResultScreenState extends State<ResultScreen> {
         elevation: 0.0,
         centerTitle: true,
       ),
-      body: Column(
-        verticalDirection: VerticalDirection.down,
-        mainAxisAlignment: MainAxisAlignment.start,
-        children: [
-          Text(' ${widget.name1} ', style: const TextStyle(fontSize: 28)),
-          SizedBox(
-            height: 40,
-            child: Image.asset('lib/icons/love.png'),
-          ),
-          Text(' ${widget.name2} ', style: const TextStyle(fontSize: 28)),
-          Padding(
-            padding: const EdgeInsets.all(8.0),
-            child: Card(
-              color: Colors.pink,
-              shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(10)),
-              child: Padding(
-                padding: const EdgeInsets.all(8.0),
-                child: Text(
-                  widget.result,
-                  style: const TextStyle(),
+      body: Center(
+        child: Column(
+          verticalDirection: VerticalDirection.down,
+          mainAxisAlignment: MainAxisAlignment.start,
+          children: [
+            Text(' ${widget.name1} ', style: const TextStyle(fontSize: 28)),
+            SizedBox(
+              height: 40,
+              child: Image.asset('lib/icons/love.png'),
+            ),
+            Text(' ${widget.name2} ', style: const TextStyle(fontSize: 28)),
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: Card(
+                elevation: 0,
+                shape: RoundedRectangleBorder(
+                  side:
+                      BorderSide(color: Theme.of(context).colorScheme.outline),
+                  borderRadius: const BorderRadius.all(Radius.circular(12)),
+                ),
+                child: Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: isLoading
+                      ? const CircularProgressIndicator()
+                      : Text(
+                          widget.result,
+                          style: const TextStyle(),
+                        ),
                 ),
               ),
             ),
-          ),
-        ],
+          ],
+        ),
       ),
     );
   }

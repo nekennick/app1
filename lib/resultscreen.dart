@@ -56,20 +56,19 @@ class _ResultScreenState extends State<ResultScreen> {
           verticalDirection: VerticalDirection.down,
           mainAxisAlignment: MainAxisAlignment.start,
           children: [
-            Text(' ${widget.name1} ', style: const TextStyle(fontSize: 28)),
+            Text(' ${widget.name1} ', style: const TextStyle(fontSize: 32)),
             SizedBox(
               height: 40,
               child: Image.asset('lib/icons/love.png'),
             ),
-            Text(' ${widget.name2} ', style: const TextStyle(fontSize: 28)),
+            Text(' ${widget.name2} ', style: const TextStyle(fontSize: 32)),
             Padding(
               padding: const EdgeInsets.all(8.0),
               child: Card(
                 elevation: 0,
-                shape: RoundedRectangleBorder(
-                  side:
-                      BorderSide(color: Theme.of(context).colorScheme.outline),
-                  borderRadius: const BorderRadius.all(Radius.circular(12)),
+                shape: const RoundedRectangleBorder(
+                  side: BorderSide(color: Colors.grey),
+                  borderRadius: BorderRadius.all(Radius.circular(12)),
                 ),
                 child: Padding(
                   padding: const EdgeInsets.all(8.0),
@@ -77,7 +76,7 @@ class _ResultScreenState extends State<ResultScreen> {
                       ? const CircularProgressIndicator()
                       : Text(
                           widget.result,
-                          style: const TextStyle(),
+                          style: const TextStyle(fontSize: 22),
                         ),
                 ),
               ),

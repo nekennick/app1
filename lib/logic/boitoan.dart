@@ -15,7 +15,6 @@ class BoiToan extends StatefulWidget {
 }
 
 class _BoiToanState extends State<BoiToan> {
-  bool isLoading = false;
   final TextEditingController name1Controller = TextEditingController();
   final TextEditingController name2Controller = TextEditingController();
   String result = '';
@@ -44,19 +43,6 @@ class _BoiToanState extends State<BoiToan> {
         ),
       ),
     );
-  }
-
-  void _startLoading() {
-    setState(() {
-      isLoading = true;
-    });
-
-    Future.delayed(const Duration(seconds: 2), () {
-      setState(() {
-        isLoading = false;
-        _showResultScreen();
-      });
-    });
   }
 
   @override
@@ -100,41 +86,38 @@ class _BoiToanState extends State<BoiToan> {
               ),
               GestureDetector(
                 onTap: () {
-                  _startLoading();
+                  _showResultScreen();
                 },
                 child: Card(
                   color: Colors.pink,
                   shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(10)),
-                  child: Padding(
-                    padding: const EdgeInsets.all(8.0),
+                  child: const Padding(
+                    padding: EdgeInsets.all(8.0),
                     child: Padding(
-                      padding: const EdgeInsets.all(8.0),
-                      child: isLoading
-                          ? const CircularProgressIndicator()
-                          : const Row(
-                              children: [
-                                Expanded(
-                                  child: Column(
-                                      mainAxisSize: MainAxisSize.min,
-                                      crossAxisAlignment:
-                                          CrossAxisAlignment.start,
-                                      children: [
-                                        Text(
-                                          'Bói Tình Yêu',
-                                          style: TextStyle(fontSize: 28),
-                                        ),
-                                        Text(
-                                          'Tìm hiểu sự tương hợp trong tình yêu đôi lứa!',
-                                          style: TextStyle(),
-                                        ),
-                                      ]),
-                                ),
-                                Row(
-                                  children: <Widget>[Icon(Icons.accessibility)],
-                                )
-                              ],
-                            ),
+                      padding: EdgeInsets.all(8.0),
+                      child: Row(
+                        children: [
+                          Expanded(
+                            child: Column(
+                                mainAxisSize: MainAxisSize.min,
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: [
+                                  Text(
+                                    'Bói Tình Yêu',
+                                    style: TextStyle(fontSize: 28),
+                                  ),
+                                  Text(
+                                    'Tìm hiểu sự tương hợp trong tình yêu đôi lứa!',
+                                    style: TextStyle(),
+                                  ),
+                                ]),
+                          ),
+                          Row(
+                            children: <Widget>[Icon(Icons.accessibility)],
+                          )
+                        ],
+                      ),
                     ),
                   ),
                 ),

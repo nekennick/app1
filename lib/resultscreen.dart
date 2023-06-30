@@ -59,7 +59,7 @@ class _ResultScreenState extends State<ResultScreen> {
             Text(' ${widget.name1} ', style: const TextStyle(fontSize: 32)),
             SizedBox(
               height: 40,
-              child: Image.asset('lib/icons/love.png'),
+              child: Image.asset('assets/icons/love.png'),
             ),
             Text(' ${widget.name2} ', style: const TextStyle(fontSize: 32)),
             Padding(

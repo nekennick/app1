@@ -89,7 +89,8 @@ class _BoiToanState extends State<BoiToan> {
                   _showResultScreen();
                 },
                 child: Card(
-                  color: Colors.pink,
+                  elevation: 3,
+                  color: const Color(0xffefb0c9),
                   shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(10)),
                   child: const Padding(
@@ -105,11 +106,12 @@ class _BoiToanState extends State<BoiToan> {
                                 children: [
                                   Text(
                                     'Bói Tình Yêu',
-                                    style: TextStyle(fontSize: 28),
+                                    style: TextStyle(
+                                        fontSize: 40, color: Colors.white),
                                   ),
                                   Text(
                                     'Tìm hiểu sự tương hợp trong tình yêu đôi lứa!',
-                                    style: TextStyle(),
+                                    style: TextStyle(color: Colors.white),
                                   ),
                                 ]),
                           ),
@@ -127,7 +129,8 @@ class _BoiToanState extends State<BoiToan> {
                   _showResultScreen();
                 },
                 child: Card(
-                  color: Colors.pink,
+                  elevation: 3,
+                  color: const Color(0xffefb0c9),
                   shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(10)),
                   child: Padding(
@@ -167,7 +170,7 @@ class _BoiToanState extends State<BoiToan> {
                   _showResultScreen();
                 },
                 child: Card(
-                  color: Colors.pink,
+                  color: const Color(0xfff8dae9),
                   shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(10)),
                   child: Padding(
@@ -203,7 +206,7 @@ class _BoiToanState extends State<BoiToan> {
                 ),
               ),
               Card(
-                color: Colors.pink,
+                color: const Color(0xfff8dae9),
                 shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(10)),
                 child: const Padding(

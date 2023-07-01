@@ -65,9 +65,10 @@ class _ResultScreenState extends State<ResultScreen> {
             Padding(
               padding: const EdgeInsets.all(8.0),
               child: Card(
-                elevation: 0,
+                color: const Color(0xfff8dae9),
+                elevation: 5,
                 shape: const RoundedRectangleBorder(
-                  side: BorderSide(color: Colors.grey),
+                  // side: BorderSide(color: Colors.grey), //viền card
                   borderRadius: BorderRadius.all(Radius.circular(12)),
                 ),
                 child: Padding(
@@ -76,7 +77,8 @@ class _ResultScreenState extends State<ResultScreen> {
                       ? const CircularProgressIndicator()
                       : Text(
                           widget.result,
-                          style: const TextStyle(fontSize: 22),
+                          style: const TextStyle(
+                              fontSize: 22, color: Colors.white),
                         ),
                 ),
               ),

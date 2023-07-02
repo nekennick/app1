@@ -59,12 +59,11 @@ class _ResultScreenState extends State<ResultScreen> {
       body: SingleChildScrollView(
         child: Padding(
           padding: const EdgeInsets.symmetric(horizontal: 20),
-          child: Container(
+          child: SizedBox(
             width: double.infinity,
             child: Column(
               children: [
-                Container(
-                    child: RichText(
+                RichText(
                   textAlign: TextAlign.center,
                   text: TextSpan(
                       text: widget.name1,
@@ -78,11 +77,10 @@ class _ResultScreenState extends State<ResultScreen> {
                                 offset: Offset(3, 6),
                                 blurRadius: 15),
                           ])),
-                )),
+                ),
                 const SizedBox(height: 10),
                 Image.asset(AppAssets.love, height: 50, width: 50),
-                Container(
-                    child: RichText(
+                RichText(
                   textAlign: TextAlign.center,
                   text: TextSpan(
                       text: widget.name2,
@@ -96,7 +94,7 @@ class _ResultScreenState extends State<ResultScreen> {
                                 offset: Offset(3, 6),
                                 blurRadius: 15),
                           ])),
-                )),
+                ),
                 const SizedBox(height: 20),
                 Container(
                     padding: const EdgeInsets.all(20),

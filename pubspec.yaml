@@ -67,6 +67,7 @@ flutter:
     - assets/fonts/BalooBhaijaan2/
     - assets/fonts/Kodchasan/
     - assets/fonts/Coiny/
+    - assets/fonts/MontaguSlab/
 
   #   - images/a_dot_ham.jpeg
 
@@ -82,30 +83,35 @@ flutter:
   # list giving the asset and other descriptors for the font. For
   # example:
   fonts:
-    - family: Coiny
-      fonts:
-        - asset: assets/fonts/Coiny/Coiny-Regular.ttf
-    - family: BalooBhaijaan2
-      fonts:
-        - asset: assets/fonts/BalooBhaijaan2/BalooBhaijaan2-Bold.ttf
-        - asset: assets/fonts/BalooBhaijaan2/BalooBhaijaan2-ExtraBold.ttf
-        - asset: assets/fonts/BalooBhaijaan2/BalooBhaijaan2-Medium.ttf
-        - asset: assets/fonts/BalooBhaijaan2/BalooBhaijaan2-Regular.ttf
-        - asset: assets/fonts/BalooBhaijaan2/BalooBhaijaan2-SemiBold.ttf
-    - family: Kodchasan
-      fonts:
-        - asset: assets/fonts/Kodchasan/Kodchasan-Bold.ttf
-        - asset: assets/fonts/Kodchasan/Kodchasan-BoldItalic.ttf
-        - asset: assets/fonts/Kodchasan/Kodchasan-ExtraLight.ttf
-        - asset: assets/fonts/Kodchasan/Kodchasan-ExtraLightItalic.ttf
-        - asset: assets/fonts/Kodchasan/Kodchasan-Italic.ttf
-        - asset: assets/fonts/Kodchasan/Kodchasan-Light.ttf
-        - asset: assets/fonts/Kodchasan/Kodchasan-LightItalic.ttf
-        - asset: assets/fonts/Kodchasan/Kodchasan-Medium.ttf
-        - asset: assets/fonts/Kodchasan/Kodchasan-MediumItalic.ttf
-        - asset: assets/fonts/Kodchasan/Kodchasan-Regular.ttf
-        - asset: assets/fonts/Kodchasan/Kodchasan-Semibold.ttf
-        - asset: assets/fonts/Kodchasan/Kodchasan-SemiboldItalic.ttf
+  - family: MontaguSlab
+    fonts:
+      # - asset: assets/fonts/MontaguSlab/MontaguSlab-VariableFont.ttf
+      - asset: assets/fonts/MontaguSlab/MontaguSlab_24pt-Light.ttf
+  - family: Coiny
+    fonts:
+      - asset: assets/fonts/Coiny/Coiny-Regular.ttf
+    # - family: BalooBhaijaan2
+    #   fonts:
+    #     - asset: assets/fonts/BalooBhaijaan2/BalooBhaijaan2-Bold.ttf
+    #       weight: 700
+        # - asset: assets/fonts/BalooBhaijaan2/BalooBhaijaan2-ExtraBold.ttf
+        # - asset: assets/fonts/BalooBhaijaan2/BalooBhaijaan2-Medium.ttf
+        # - asset: assets/fonts/BalooBhaijaan2/BalooBhaijaan2-Regular.ttf
+        # - asset: assets/fonts/BalooBhaijaan2/BalooBhaijaan2-SemiBold.ttf
+    # - family: Kodchasan
+    #   fonts:
+    #     - asset: assets/fonts/Kodchasan/Kodchasan-Bold.ttf
+    #     - asset: assets/fonts/Kodchasan/Kodchasan-BoldItalic.ttf
+    #     - asset: assets/fonts/Kodchasan/Kodchasan-ExtraLight.ttf
+    #     - asset: assets/fonts/Kodchasan/Kodchasan-ExtraLightItalic.ttf
+    #     - asset: assets/fonts/Kodchasan/Kodchasan-Italic.ttf
+    #     - asset: assets/fonts/Kodchasan/Kodchasan-Light.ttf
+    #     - asset: assets/fonts/Kodchasan/Kodchasan-LightItalic.ttf
+    #     - asset: assets/fonts/Kodchasan/Kodchasan-Medium.ttf
+    #     - asset: assets/fonts/Kodchasan/Kodchasan-MediumItalic.ttf
+    #     - asset: assets/fonts/Kodchasan/Kodchasan-Regular.ttf
+    #     - asset: assets/fonts/Kodchasan/Kodchasan-Semibold.ttf
+    #     - asset: assets/fonts/Kodchasan/Kodchasan-SemiboldItalic.ttf
 
   #         style: italic
   #   - family: Trajan Pro

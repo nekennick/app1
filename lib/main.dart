@@ -1,4 +1,5 @@
 import 'package:app1/logic/boitoan.dart';
+import 'package:app1/values/app_colors.dart';
 
 import 'package:flutter/material.dart';
 
@@ -14,7 +15,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Bói theo tên',
       theme: ThemeData(
-        primarySwatch: Colors.pink,
+        scaffoldBackgroundColor: AppColors.primaryColor,
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
       debugShowCheckedModeBanner: false,

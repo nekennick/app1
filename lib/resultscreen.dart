@@ -111,7 +111,7 @@ class _ResultScreenState extends State<ResultScreen> {
                                       text: widget.result,
                                       style: const TextStyle(
                                           fontSize: 22,
-                                          fontFamily: 'MontaguSlab',
+                                          fontFamily: 'Braah_One',
                                           color: Colors.black)))
                             ],
                           ))

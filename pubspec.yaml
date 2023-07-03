@@ -85,33 +85,90 @@ flutter:
   fonts:
   - family: MontaguSlab
     fonts:
-      # - asset: assets/fonts/MontaguSlab/MontaguSlab-VariableFont.ttf
+      - asset: assets/fonts/MontaguSlab/MontaguSlab-VariableFont.ttf
       - asset: assets/fonts/MontaguSlab/MontaguSlab_24pt-Light.ttf
   - family: Coiny
     fonts:
       - asset: assets/fonts/Coiny/Coiny-Regular.ttf
-    # - family: BalooBhaijaan2
-    #   fonts:
-    #     - asset: assets/fonts/BalooBhaijaan2/BalooBhaijaan2-Bold.ttf
-    #       weight: 700
-        # - asset: assets/fonts/BalooBhaijaan2/BalooBhaijaan2-ExtraBold.ttf
-        # - asset: assets/fonts/BalooBhaijaan2/BalooBhaijaan2-Medium.ttf
-        # - asset: assets/fonts/BalooBhaijaan2/BalooBhaijaan2-Regular.ttf
-        # - asset: assets/fonts/BalooBhaijaan2/BalooBhaijaan2-SemiBold.ttf
-    # - family: Kodchasan
-    #   fonts:
-    #     - asset: assets/fonts/Kodchasan/Kodchasan-Bold.ttf
-    #     - asset: assets/fonts/Kodchasan/Kodchasan-BoldItalic.ttf
-    #     - asset: assets/fonts/Kodchasan/Kodchasan-ExtraLight.ttf
-    #     - asset: assets/fonts/Kodchasan/Kodchasan-ExtraLightItalic.ttf
-    #     - asset: assets/fonts/Kodchasan/Kodchasan-Italic.ttf
-    #     - asset: assets/fonts/Kodchasan/Kodchasan-Light.ttf
-    #     - asset: assets/fonts/Kodchasan/Kodchasan-LightItalic.ttf
-    #     - asset: assets/fonts/Kodchasan/Kodchasan-Medium.ttf
-    #     - asset: assets/fonts/Kodchasan/Kodchasan-MediumItalic.ttf
-    #     - asset: assets/fonts/Kodchasan/Kodchasan-Regular.ttf
-    #     - asset: assets/fonts/Kodchasan/Kodchasan-Semibold.ttf
-    #     - asset: assets/fonts/Kodchasan/Kodchasan-SemiboldItalic.ttf
+  - family: Baloo_Paaji_2
+    fonts:
+      - asset: assets/fonts/Baloo_Paaji_2/BalooPaaji2-VariableFont_wght.ttf
+      - asset: assets/fonts/Baloo_Paaji_2/static/BalooPaaji2-Bold.ttf
+      - asset: assets/fonts/Baloo_Paaji_2/static/BalooPaaji2-ExtraBold.ttf
+      - asset: assets/fonts/Baloo_Paaji_2/static/BalooPaaji2-Medium.ttf
+      - asset: assets/fonts/Baloo_Paaji_2/static/BalooPaaji2-Regular.ttf
+      - asset: assets/fonts/Baloo_Paaji_2/static/BalooPaaji2-SemiBold.ttf
+  - family: BalooBhaijaan2
+    fonts:
+      - asset: assets/fonts/BalooBhaijaan2/BalooBhaijaan2-Bold.ttf
+      - asset: assets/fonts/BalooBhaijaan2/BalooBhaijaan2-ExtraBold.ttf
+      - asset: assets/fonts/BalooBhaijaan2/BalooBhaijaan2-Medium.ttf
+      - asset: assets/fonts/BalooBhaijaan2/BalooBhaijaan2-Regular.ttf
+      - asset: assets/fonts/BalooBhaijaan2/BalooBhaijaan2-SemiBold.ttf
+  - family: Braah_One
+    fonts:
+      - asset: assets/fonts/Braah_One/BraahOne-Regular.ttf
+  - family: Dongle
+    fonts:
+      - asset: assets/fonts/Dongle/Dongle-Bold.ttf
+      - asset: assets/fonts/Dongle/Dongle-Light.ttf
+      - asset: assets/fonts/Dongle/Dongle-Regular.ttf
+  - family: Lexend_Zetta
+    fonts:
+      - asset: assets/fonts/Lexend_Zetta/LexendZetta-VariableFont.ttf
+      - asset: assets/fonts/Lexend_Zetta/static/LexendZetta-Black.ttf
+      - asset: assets/fonts/Lexend_Zetta/static/LexendZetta-Bold.ttf
+      - asset: assets/fonts/Lexend_Zetta/static/LexendZetta-ExtraBold.ttf
+      - asset: assets/fonts/Lexend_Zetta/static/LexendZetta-ExtraLight.ttf
+      - asset: assets/fonts/Lexend_Zetta/static/LexendZetta-Light.ttf
+      - asset: assets/fonts/Lexend_Zetta/static/LexendZetta-Thin.ttf
+      - asset: assets/fonts/Lexend_Zetta/static/LexendZetta-Medium.ttf
+      - asset: assets/fonts/Lexend_Zetta/static/LexendZetta-Regular.ttf
+      - asset: assets/fonts/Lexend_Zetta/static/LexendZetta-SemiBold.ttf
+  - family: Merienda
+    fonts:
+      - asset: assets/fonts/Merienda/Merienda-VariableFont.ttf
+      - asset: assets/fonts/Merienda/static/Merienda-Black.ttf
+      - asset: assets/fonts/Merienda/static/Merienda-ExtraBold.ttf
+      - asset: assets/fonts/Merienda/static/Merienda-Light.ttf
+      - asset: assets/fonts/Merienda/static/Merienda-Bold.ttf
+      - asset: assets/fonts/Merienda/static/Merienda-Medium.ttf
+      - asset: assets/fonts/Merienda/static/Merienda-Regular.ttf
+      - asset: assets/fonts/Merienda/static/Merienda-SemiBold.ttf
+  - family: MuseoModerno
+    fonts:
+      - asset: assets/fonts/MuseoModerno/MuseoModerno-Italic-VariableFont_wght.ttf
+      - asset: assets/fonts/MuseoModerno/MuseoModerno-VariableFont_wght.ttf
+  - family: Oooh_Baby
+    fonts:
+      - asset: assets/fonts/Oooh_Baby/OoohBaby-Regular.ttf
+  - family: Pangolin
+    fonts:
+      - asset: assets/fonts/Pangolin/Pangolin-Regular.ttf
+  - family: Pattaya
+    fonts:
+      - asset: assets/fonts/Pattaya/Pattaya-Regular.ttf
+  - family: Sriracha
+    fonts:
+      - asset: assets/fonts/Sriracha/Sriracha-Regular.ttf
+  - family: Tilt_Neon
+    fonts:
+      - asset: assets/fonts/Tilt_Neon/static/TiltNeon-Regular.ttf
+      - asset: assets/fonts/Tilt_Neon/TiltNeon-Regular-VariableFont.ttf
+  - family: Kodchasan
+    fonts:
+      - asset: assets/fonts/Kodchasan/Kodchasan-Bold.ttf
+      - asset: assets/fonts/Kodchasan/Kodchasan-BoldItalic.ttf
+      - asset: assets/fonts/Kodchasan/Kodchasan-ExtraLight.ttf
+      - asset: assets/fonts/Kodchasan/Kodchasan-ExtraLightItalic.ttf
+      - asset: assets/fonts/Kodchasan/Kodchasan-Italic.ttf
+      - asset: assets/fonts/Kodchasan/Kodchasan-Light.ttf
+      - asset: assets/fonts/Kodchasan/Kodchasan-LightItalic.ttf
+      - asset: assets/fonts/Kodchasan/Kodchasan-Medium.ttf
+      - asset: assets/fonts/Kodchasan/Kodchasan-MediumItalic.ttf
+      - asset: assets/fonts/Kodchasan/Kodchasan-Regular.ttf
+      - asset: assets/fonts/Kodchasan/Kodchasan-Semibold.ttf
+      - asset: assets/fonts/Kodchasan/Kodchasan-SemiboldItalic.ttf
 
   #         style: italic
   #   - family: Trajan Pro

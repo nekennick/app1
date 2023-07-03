@@ -1,31 +1,31 @@
 String getResultNameWork(int number) {
   switch (number) {
     case 1:
-      return '"Work"';
+      return '"Work1"';
 
     case 2:
-      return '"Work"';
+      return '"Work2"';
 
     case 3:
-      return '"Work"';
+      return '"Work3"';
 
     case 4:
-      return '"Work"';
+      return '"Work4"';
 
     case 5:
-      return '"Work"';
+      return '"Work5"';
 
     case 6:
-      return '"Work"';
+      return '"Work6"';
 
     case 7:
-      return '"Work"';
+      return '"Work7"';
 
     case 8:
-      return '"Work"';
+      return '"Wor8"';
 
     case 9:
-      return '"Work"';
+      return '"Work9"';
 
     default:
       return '"Không hợp lệ"';

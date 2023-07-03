@@ -119,6 +119,7 @@ class _BoiToanState extends State<BoiToan> {
             mainAxisAlignment: MainAxisAlignment.start,
             children: [
               TextField(
+                style: const TextStyle(fontSize: 22, fontFamily: 'Tilt_Neon'),
                 controller: name1Controller,
                 decoration: InputDecoration(
                   filled: true,
@@ -132,6 +133,7 @@ class _BoiToanState extends State<BoiToan> {
                 height: 10,
               ),
               TextField(
+                style: const TextStyle(fontSize: 22, fontFamily: 'Tilt_Neon'),
                 controller: name2Controller,
                 decoration: InputDecoration(
                   filled: true,
@@ -166,15 +168,16 @@ class _BoiToanState extends State<BoiToan> {
                                 children: [
                                   Text(
                                     'Bói Tình Yêu',
-                                    style: TextStyle(fontSize: 28),
+                                    style: TextStyle(
+                                        fontSize: 28, fontFamily: 'Merienda'),
                                   ),
                                   Text(
                                     'Tìm hiểu sự tương hợp trong tình yêu đôi lứa!',
-                                    style: TextStyle(),
+                                    style: TextStyle(fontFamily: 'Tilt_Neon'),
                                   )
                                 ]),
                           ),
-                          Image.asset(AppAssets.love, height: 100, width: 100)
+                          Image.asset(AppAssets.love, height: 80, width: 80)
                         ],
                       ),
                     ),
@@ -203,15 +206,16 @@ class _BoiToanState extends State<BoiToan> {
                                 children: [
                                   Text(
                                     'Bói Sự Nghiệp',
-                                    style: TextStyle(fontSize: 28),
+                                    style: TextStyle(
+                                        fontSize: 28, fontFamily: 'Merienda'),
                                   ),
                                   Text(
                                     'Tìm hiểu sự tương hợp trong tình yêu đôi lứa!',
-                                    style: TextStyle(),
+                                    style: TextStyle(fontFamily: 'Tilt_Neon'),
                                   )
                                 ]),
                           ),
-                          Image.asset(AppAssets.work, height: 100, width: 100)
+                          Image.asset(AppAssets.work, height: 80, width: 80)
                         ],
                       ),
                     ),
@@ -239,16 +243,16 @@ class _BoiToanState extends State<BoiToan> {
                                 children: [
                                   Text(
                                     'Bói Hôn Nhân',
-                                    style: TextStyle(fontSize: 28),
+                                    style: TextStyle(
+                                        fontSize: 28, fontFamily: 'Merienda'),
                                   ),
                                   Text(
                                     'Tìm hiểu sự tương hợp trong tình yêu đôi lứa!',
-                                    style: TextStyle(),
+                                    style: TextStyle(fontFamily: 'Tilt_Neon'),
                                   )
                                 ]),
                           ),
-                          Image.asset(AppAssets.married,
-                              height: 100, width: 100)
+                          Image.asset(AppAssets.married, height: 80, width: 80)
                         ],
                       ),
                     ),
@@ -272,7 +276,7 @@ class _BoiToanState extends State<BoiToan> {
                               children: [
                                 Text(
                                   'Tìm hiểu sự tương hợp trong tình yêu đôi lứa!',
-                                  style: TextStyle(),
+                                  style: TextStyle(fontFamily: 'Tilt_Neon'),
                                 )
                               ]),
                         ),

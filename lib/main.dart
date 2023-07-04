@@ -2,8 +2,12 @@ import 'package:app1/logic/boitoan.dart';
 import 'package:app1/values/app_colors.dart';
 
 import 'package:flutter/material.dart';
+import 'package:google_mobile_ads/google_mobile_ads.dart';
 
 void main() {
+  WidgetsFlutterBinding.ensureInitialized();
+  MobileAds.instance.initialize();
+
   runApp(const MyApp());
 }
 

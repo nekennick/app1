@@ -1,5 +1,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.app1">
+
+    <uses-permission android:name="com.google.android.gms.permission.AD_ID"/>
+
    <application
         android:label="app1"
         android:name="${applicationName}"
@@ -32,8 +35,9 @@
             android:value="2" />
 
             <!-- Sample AdMob app ID: ca-app-pub-3940256099942544~3347511713 -->
+            <!-- AdMob MyApp ID: ca-app-pub-9808019056055820~8645787293 -->
         <meta-data
             android:name="com.google.android.gms.ads.APPLICATION_ID"
-            android:value="ca-app-pub-3940256099942544~3347511713"/>
+            android:value="ca-app-pub-9808019056055820~8645787293"/>
     </application>
 </manifest>

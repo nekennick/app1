@@ -317,7 +317,6 @@ class _BoiToanState extends State<BoiToan> {
                     )
                 ],
               )
-              //dat ad banner
             ],
           ),
         ),
